@@ -32,20 +32,49 @@ La API de AquaWatch implementa operaciones CRUD para las principales entidades d
 <BR>
 
 ### Listado de EnPoints de las Entidades
+| Método | Endpoint              | Descripción                      |
+| ------ | --------------------- | -------------------------------- |
+| POST   | `/api#/Users/UsersController_create`| Crea un nuevo usuario|
+| GET    | `/api#/Users/UsersController_findAll`| Lista todos los usuarios|
+| GET    | `/api#/Sensors/SensorsController_findOne`| Obtiene un usuario por ID|
+| PATCH  | `/api#/Sensors/SensorsController_update`| Actualiza un usuario|
+| DELETE | `/api#/Users/UsersController_remove`| Elimina un usuario|
+| POST   | `/api#/Sensors/SensorsController_create`| Registra un sensor |
+| GET    | `/api#/Sensors/SensorsController_findAll`| Lista de todos los sensores|
+| GET    | `/api#/Sensors/SensorsController_findOne` | Obtiene un sensor por ID      |
+| PATCH  | `/api#/Sensors/SensorsController_update` | Actualiza un sensor          |
+| DELETE | `/api#/Sensors/SensorsController_remove` | Elimina un sensor            |
+| POST   | `/api#/Bills/BillsController_create`| Registra una Bills |
+| GET    | `/api#/Bills/BillsController_findAll`| Lista de todos los Bills|
+| GET    | `/api#/Bills/BillsController_findOne` | Obtiene una Bills por ID      |
+| PATCH  | `/api#/Bills/BillsController_update` | Actualiza una Bills         |
+| DELETE | `/api#/Bills/BillsController_remove` | Elimina una Bills            |
+| POST   | `/api#/SensorReadings/SensorReadingsController_create`| Crea una nueva lectura del sensor|
+| GET    | `/api#/SensorReadings/SensorReadingsController_findAll`| Lista todos las lecturas del sensor|
+| GET    | `/api#/SensorReadings/SensorReadingsController_findOne`| Obtiene una lectura por ID|
+| PATCH  | `/api#/SensorReadings/SensorReadingsController_update`| Actualiza una lectura del sensor|
+| DELETE | `/api#/SensorReadings/SensorReadingsController_remove`| Elimina una lectura del sensor|
+| POST   | `/api#/Entities/EntitiesController_create`| Crea un nueva Entidad|
+| GET    | `/api#/Entities/EntitiesController_findAll`| Lista todas las Entidades|
+| GET    | `/api#/Entities/EntitiesController_findOne`| Obtiene una Entidad por ID|
+| PATCH  | `/api#/Entities/EntitiesController_update`| Actualiza una Entidad|
+| DELETE | `/api#/Entities/EntitiesController_remove`| Elimina una Entidad|
+| POST   | `/api#/Alerts/AlertsController_create`| Crea un nueva Alerta|
+| GET    | `/api#/Alerts/AlertsController_findAll`| Lista todas las Alertas|
+| GET    | `/api#/Alerts/AlertsController_findOne`| Obtiene una Alerta por ID|
+| PATCH  | `/api#/Alerts/AlertsController_update`| Actualiza una Alerta|
+| DELETE | `/api#/Alerts/AlertsController_remove`| Elimina una Alerta|
 
 <BR>
 
 ### Screenshots (Capturas de Pantalla)
+<div align="center">
+  <img src="/img/users.png" width="500"/>
+  <img src="/img/sensors.png" width="500"/>
+  <img src="/img/bills.png" width="500"/>
+</div>
+
+
 
 <BR>
 
-### Endpoints que utiliza ML (Machine Learning)
-
-<BR>
-
-### Listado de EndPoints que consumen ML
-
-<BR>
-
-
-### Screenshots (Cpaturas de Pantalla)
