@@ -16,13 +16,13 @@ Redaccion que explique los conceptos teoricos y formulas matematicas o estadista
 
 ### Aplicacion del Mecanismo
 
-Comandos que permitan aplicar los algoritmos al datatset generado en la fase de ETL
+Comandos que permitan aplicar los algoritmos al datatset generado en la fase de ETL.
 
 ### Graficos Generados (3 Minimo)
 
 ### Resultados Obtenidos
 
-Una vez aplicado los algoritmos demostrar los resultados obtenidos con su terpretacion al contexto del proyecto
+Una vez aplicado los algoritmos demostrar los resultados obtenidos con su terpretacion al contexto del proyecto.
 
 ### Conclusion de la Fase del Proyecto 
 

@@ -21,7 +21,7 @@ Comandos que permitan aplicar los algoritmos al datatset generado en la fase de 
 
 ### Resultados Obtenidos
 
-Una vez aplicado los algoritmos demostrar los resultados obtenidos con su terpretacion al contexto del proyecto
+Una vez aplicado los algoritmos demostrar los resultados obtenidos con su terpretacion al contexto del proyecto.
 
 ### Conclusion de la Fase del Proyecto 
 
