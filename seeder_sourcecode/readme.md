@@ -24,7 +24,7 @@ En la carpeta `/database/` se incluye:
 ```
 /database/aquabrym_empty.sql
 ```
-Este archivo contiene únicamente la **estructura** de la base de datos sin datos cargados, lista para importarse en PostgreSQL/MySQL.
+Este archivo contiene únicamente la **estructura** de la base de datos sin datos cargados, lista para importarse en PostgreSQL/MySQL
 
 ---
 

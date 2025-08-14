@@ -19,4 +19,4 @@ Comandos para la depuración y limpieza de datos.
 Generación de gráficos base para la visualización del volumen, categorización e identificación de datos significativos para el análisis de datos.
 
 ## Exportación del Data SET (.csv)
-Generación de un archivo de datos simplificado y limpio que servirá para alimentar los algoritmos de aprendizaje supervisado y no supervisado.
+Generación de un archivo de datos simplificado y limpio que servirá para alimentar los algoritmos de aprendizaje supervisado y no supervisado
