@@ -1,29 +1,84 @@
-ECHO est� activado.
+💧 Documentación del Modelo No Supervisado para Agrupamiento de Consumos
+📌 Propuesta de aplicación
 
-## Analisis No Supervisado (Machine Learning)
+El análisis no supervisado se utiliza para descubrir patrones y agrupar registros de consumo de agua sin necesidad de etiquetas previas.
+Esto permite:
 
-### Propuesta de Aplicacion
+👥 Identificar grupos de usuarios con consumos similares.
 
-Redaccion de los que el equipo propone para analizar y obtener una prediccion, promedio, reduccion de dimensionalidad
+🔎 Detectar comportamientos comunes o atípicos.
 
-### Eleccion del mecanismo a utilizar
+📊 Facilitar la segmentación y el análisis exploratorio de los datos.
 
-El analisis supervisado se utiliza para la generacion de conocimiento aplicado a predicciones, recomendaciones, comprension de contextos, propuesta de soluciones a problema, etc, a traves de principios matematicos y estadisticos, el equipo definira el mecanismo (algoritmo) que utilizara para su proyecto
+⚙️ Elección del mecanismo a utilizar
 
-## Marco Teorico
+Se seleccionó el algoritmo KMeans, un método de clustering ampliamente utilizado por:
 
-Redaccion que explique los conceptos teoricos y formulas matematicas o estadista para el mecanismo definido.
+⚡ Su eficiencia en grandes volúmenes de datos.
 
-### Aplicacion del Mecanismo
+👁️ Ser fácil de interpretar y visualizar.
 
-Comandos que permitan aplicar los algoritmos al datatset generado en la fase de ETL.
+📊 Su capacidad de encontrar grupos naturales en los datos.
 
-### Graficos Generados (3 Minimo)
+📖 Marco teórico
 
-### Resultados Obtenidos
+Aprendizaje no supervisado:
+Técnica que analiza datos sin etiquetas para encontrar patrones, estructuras o agrupamientos.
 
-Una vez aplicado los algoritmos demostrar los resultados obtenidos con su terpretacion al contexto del proyecto.
+KMeans:
+Algoritmo que divide los datos en K grupos minimizando la distancia entre cada punto y su centroide.
 
-### Conclusion de la Fase del Proyecto 
+Distancia Euclidiana:
+  
+	\[
+	d(x, y) = \sqrt{\sum_{i=1}^{n} (x_i - y_i)^2}
+	\]
 
-Redaccion general de la importacion de esta fase, asi como de la importacion de los resultados obtenidos.
+Criterio de optimización (Inercia):
+  
+	\[
+		ext{Inercia} = \sum_{k=1}^{K} \sum_{x_i \in C_k} ||x_i - \mu_k||^2
+	\]
+	Donde $\mu_k$ es el centroide del cluster $k$.
+
+🖥️ Aplicación del mecanismo
+
+Ejemplo en Python:
+
+from sklearn.cluster import KMeans
+
+# Entrenamiento y predicción
+kmeans = KMeans(n_clusters=2, random_state=42)
+df['cluster'] = kmeans.fit_predict(X)
+
+📊 Gráficos generados
+![📈 Histograma por cluster](graficas/histograma_cluster.png)  
+![📊 Boxplot por cluster](graficas/boxplot_cluster.png)  
+![🔍 Conteo por cluster](graficas/conteo_cluster.png)  
+
+
+📈 Histograma: muestra la frecuencia de consumo en cada grupo.
+
+📊 Boxplot: permite comparar la variabilidad de consumos.
+
+🔍 Conteo por cluster: visualiza el tamaño de cada grupo.
+
+✅ Resultados obtenidos
+
+El modelo KMeans permitió identificar:
+
+🟢 Grupos de registros con patrones de consumo similares.
+
+📊 Diferencias claras en la distribución entre clusters.
+
+🔎 Segmentos útiles para análisis exploratorio y toma de decisiones.
+
+🏁 Conclusión de la fase del proyecto
+
+Esta fase es clave para el análisis exploratorio y la segmentación:
+
+🤝 Facilita estrategias personalizadas según el tipo de usuario.
+
+🚨 Ayuda a descubrir patrones ocultos que no son evidentes a simple vista.
+
+💡 Mejora la comprensión global del consumo de agua dentro del sistema.

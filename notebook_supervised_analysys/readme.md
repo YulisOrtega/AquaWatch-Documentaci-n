@@ -1,28 +1,87 @@
-ECHO est� activado.
-## Analisis Supervisado (Machine Learning)
+🌊 Modelo Supervisado para Detección de Consumos Anómalos
+📌 Propuesta de aplicación
 
-### Propuesta de Aplicacion
+El análisis supervisado se utiliza para la generación de un modelo capaz de identificar consumos anómalos de agua en registros provenientes de sensores.
+Esto permite:
 
-Se propone que utilice los datos históricos de consumo de agua para predecir tendencias, calcular promedios y detectar anomalías. Este análisis permitirá generar recomendaciones personalizadas para reducir el consumo y optimizar el uso del recurso. Con esta función, Awuawach pasará de ser solo un sistema de monitoreo a una herramienta predictiva que fomente la eficiencia hídrica y la toma de decisiones informadas.
+🔎 Automatizar la detección de comportamientos inusuales.
 
-### Eleccion del mecanismo a utilizar
+📢 Generar alertas tempranas.
 
-El analisis supervisado se utiliza para la generacion de conocimiento aplicado a predicciones, recomendaciones, comprension de contextos, propuesta de soluciones a problema, etc, a traves de principios matematicos y estadisticos, el equipo definira el mecanismo (algoritmo) que utilizara para su proyecto
+💡 Proporcionar recomendaciones personalizadas a los usuarios.
 
-## Marco Teorico
+⚙️ Elección del mecanismo a utilizar
 
-Redaccion que explique los conceptos teoricos y formulas matematicas o estadista para el mecanismo definido.
+Se seleccionó el algoritmo Random Forest Classifier, un método de aprendizaje supervisado basado en:
 
-### Aplicacion del Mecanismo
+🌲 Construcción de múltiples árboles de decisión.
 
-Comandos que permitan aplicar los algoritmos al datatset generado en la fase de ETL
+🗳️ Voto mayoritario para la clasificación.
 
-### Graficos Generados (3 Minimo)
+🛡️ Robustez ante datos ruidosos.
 
-### Resultados Obtenidos
+📊 Posibilidad de interpretar la importancia de cada variable.
 
-Una vez aplicado los algoritmos demostrar los resultados obtenidos con su terpretacion al contexto del proyecto.
+📖 Marco teórico
 
-### Conclusion de la Fase del Proyecto 
+Aprendizaje supervisado:
+Entrenar un modelo con datos etiquetados (X, y) para que aprenda a predecir la etiqueta de nuevos registros.
 
-Redaccion general de la importacion de esta fase, asi como de la importacion de los resultados obtenidos.
+Random Forest:
+Un ensamble de árboles de decisión. Cada árbol se entrena con una muestra aleatoria del dataset y la predicción final se obtiene como la moda de todas las predicciones individuales.
+
+Fórmula de entropía (para árboles de decisión):
+      H(S)=−i=1∑c​pi​log2​pi​
+
+
+Donde $p_i$ es la proporción de la clase $i$ en el conjunto $S$.
+
+Métricas de evaluación:
+      Precisioˊn = TP + FPTP​Recall = TP+FNTP​F1 = 2 ⋅ Precisioˊn + RecallPrecisioˊn ⋅ Recall​
+
+🖥️ Aplicación del mecanismo
+
+Ejemplo en Python:
+
+from sklearn.ensemble import RandomForestClassifier
+
+# Entrenamiento del modelo
+clf = RandomForestClassifier(n_estimators=100, random_state=42)
+clf.fit(X_train, y_train)
+
+# Predicción en datos de prueba
+predicciones = clf.predict(X_test)
+
+📊 Gráficos generados
+![📈 Histograma de consumo](graficas/histograma_consumo.png)  
+![📊 Boxplot consumo](graficas/boxplot_consumo.png)  
+![🔍 Conteo anomalías](graficas/conteo_anomalias.png)  
+
+
+📈 Histograma: muestra la distribución de consumos.
+
+📊 Boxplot: resalta valores atípicos.
+
+🔍 Conteo: diferencia entre registros normales y anómalos.
+
+✅ Resultados obtenidos
+
+El modelo entrenado logró:
+
+🟢 Identificar correctamente los registros anómalos.
+
+📊 Obtener métricas de precisión, recall y F1-score satisfactorias.
+
+👁️ Visualizar diferencias claras entre consumos normales y atípicos en los gráficos.
+
+🏁 Conclusión de la fase del proyecto
+
+Esta fase es fundamental para:
+
+🤖 Dotar al sistema de capacidades inteligentes.
+
+🚨 Permitir la detección automática de consumos atípicos.
+
+⚡ Mejorar la eficiencia en la gestión del recurso hídrico.
+
+👥 Aportar valor agregado al usuario final mediante recomendaciones basadas en datos reales y análisis estadístico.
