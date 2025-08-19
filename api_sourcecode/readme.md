@@ -72,7 +72,7 @@ La API de AquaWatch implementa operaciones CRUD para las principales entidades d
   <img src="/img/users.png" width="500"/>
   <img src="/img/sensors.png" width="500"/>
   <img src="/img/bills.png" width="500"/>
-  <img src="/img/alertas.png" width="500"/>
+  <img src="/img/alerts.png" width="500"/>
   <img src="/img/sensor.png" width="500"/>
 </div>
 
