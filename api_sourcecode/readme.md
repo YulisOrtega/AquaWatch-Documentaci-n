@@ -72,9 +72,23 @@ La API de AquaWatch implementa operaciones CRUD para las principales entidades d
   <img src="/img/users.png" width="500"/>
   <img src="/img/sensors.png" width="500"/>
   <img src="/img/bills.png" width="500"/>
+  <img src="/img/alerts.png" width="500"/>
+  <img src="/img/sensor.png" width="500"/>
 </div>
-
-
 
 <BR>
 
+### Endpoints que utiliza ML (Machine Learning)
+La API incluye endpoints que utilizan modelos de Machine Learning para:
+
+° Detección de patrones anormales que podrían indicar fugas.
+  Estos modelos se entrenan con datos recopilados por el dispositivo IoT y procesados en la nube.
+
+### Listado de EnPoints de las Entidades
+| Método | Endpoint              | Descripción                      |
+| ------ | --------------------- | -------------------------------- |
+| POST   | `/api#/SensorReadings/SensorReadingsController_create`|Realiza la lectura sobre la medición del agua|
+
+<div align="center">
+  <img src="/img/sensor.png" width="500"/>
+</div>
