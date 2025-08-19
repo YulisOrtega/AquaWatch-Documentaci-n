@@ -22,7 +22,7 @@ Se seleccionó el algoritmo Random Forest Classifier, un método de aprendizaje 
 
 📊 Posibilidad de interpretar la importancia de cada variable.
 
-📖 Marco teórico
+📖 Marco teórico.
 
 Aprendizaje supervisado:
 Entrenar un modelo con datos etiquetados (X, y) para que aprenda a predecir la etiqueta de nuevos registros.

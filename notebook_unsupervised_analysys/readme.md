@@ -63,7 +63,7 @@ df['cluster'] = kmeans.fit_predict(X)
 
 🔍 Conteo por cluster: visualiza el tamaño de cada grupo.
 
-✅ Resultados obtenidos
+✅ Resultados obtenidos.
 
 El modelo KMeans permitió identificar:
 
